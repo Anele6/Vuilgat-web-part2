@@ -3,27 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Vuilgat!</title>
-    <h1><img src="logo.png" alt="Description" width="100" height="100"/> About Vuilgat</h1>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- ===== SEO ===== -->
+    <title>About Vuilgat! | Our Story in South African Stance Culture</title>
+    <meta name="description" content="Learn how Vuilgat! grew from a 2014 passion project into a stance car culture brand making statement t-shirts and custom car stickers in Gauteng.">
+    <meta name="keywords" content="about Vuilgat, stance culture brand, car culture South Africa, brand history 2014, mission and vision, car enthusiasts, stance cars, Soweto brand">
+    <meta name="author" content="Anele Mawela">
     
-    <meta name="description" content="Learn the story behind Vuilgat>
+
+    <!-- Open Graph / social sharing preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vuilgat!">
+    <meta property="og:title" content="About Vuilgat! | Our Story in South African Stance Culture">
+    <meta property="og:description" content="Learn how Vuilgat! grew from a 2014 passion project into a stance car culture brand making statement t
+    
+
+   <link rel="icon" type="image/png" href="images/vuilgat-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+      
 </head>
+<body
 
+    <header class="site-header" >
+        <a href="index.html" class="logo">Vuilgat<span>!</span></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>      
 
+                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
 
-    <main>
+    <main id="main">
+        <section id="page-heading">
+            <h1><img src="images/vuilgat-logo.png" alt="" width="60" height="60"> About Vuilgat</h1>
+        </section>  
 
+<!-- Organisation history -->
         
-           
-       
-
-        <!-- Organisation history -->
-       
             <h2>Our History</h2>
             <p> Vuilgat started as a thought and became a reality in 2014, born purely out of a deep-rooted love for
                 cars and the desire to create an identity that enthusiasts could proudly wear and display.
@@ -107,6 +133,24 @@
         <nav aria-label="Footer navigation">
         </nav>
     </footer>
-
+<script> 
+        // date and time update on the footer
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                 minute: '2-digit', 
+                 second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('en-US', options);
+        }
+        // update date time immediately
+        updateDateTime();
+        setInterval(updateDateTime, 1000);  
+    </script>
 </body>
 </html>

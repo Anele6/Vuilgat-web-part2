@@ -3,134 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop </title>
-     <meta name="description" content="Shop Vuilgat statement t-shirts and custom stance car stickers.">
-   
+     <meta name="referrer" content="strict-origin-when-cross-origin">
+
+     <!-- ===== SEO ===== -->
+    <title>Shop Stance T-Shirts &amp; Custom Car Stickers | Vuilgat!</title>
+    <meta name="description" content="Browse Vuilgat! Circle Logo and Tokyo Van t-shirts from R450, plus windscreen banners and sticker packs. Search, filter and enquire about stock and bulk prices.">
+    <meta name="keywords" content="buy stance t-shirts, car stickers online, windscreen banner decal, Circle Logo Tee, Tokyo Van Tee, sticker pack, custom decals, streetwear South Africa, car culture merch">
+    <meta name="author" content="Anele Mawela">
+  
+
+    <!-- Open Graph / social sharing preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vuilgat!">
+    <meta property="og:title" content="Shop Stance T-Shirts &amp; Custom Car Stickers | Vuilgat!">
+    <meta property="og:description" content="Browse Vuilgat! Circle Logo and Tokyo Van t-shirts from R450, plus windscreen banners and sticker packs. Search, filter and enquire about stock and bulk prices.">
+    
+
+    <link rel="icon" type="image/png" href="images/vuilgat-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+     <script src="js/script.js" defer></script>
 </head>
 
-
+<body> 
     
+ <header class="site-header" >
+             <a href="index.html" class="logo">Vuilgat<span>!</span></a>
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html" aria-current="page">Shop</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <main>
+            <main id="main">
+                <section id="page-heading">
+            <h1><img src="images/vuilgat-logo.png" alt="" width="60" height="60"> Shop</h1>                 
+<p>Two product lines, one identity: statement t-shirts and custom car stickers for the stance scene.</p>
+                </section>
 
-       <header>
-        <div class="logo">
-            <a href="index.html">VÜILGAT!</a>
-        </div>
-           
-            <p>Two product lines, one identity: statement t-shirts and custom car stickers for the stance scene.</p>
-       
+            <section id="products">
+            <h2 class="visually-hidden">Products</h2>
+            <!-- Scroll targets kept from Part 2 so links such as shop.html#stickers still land here (shop.js also selects the matching tab) -->
+            <span id="tshirts"></span><span id="stickers"></span>
 
+            <form class="shop-toolbar" role="search" aria-label="Search products" action="shop.html" method="get">
+                <div class="search-box">
+                    <div class="search-field">
+                        <label for="product-search">Search products</label>
+                        <input type="search" id="product-search" name="q" placeholder="Try &ldquo;red&rdquo;, &ldquo;tokyo&rdquo; or &ldquo;sticker&rdquo;" autocomplete="off" maxlength="40">
+                    </div>
+                    <div>
+                        <label for="product-sort">Sort by</label>
+                        <select id="product-sort" name="sort">
+                            <option value="featured">Featured</option>
+                            <option value="price-asc">Price: low to high</option>
+                            <option value="price-desc">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="category-tabs" role="tablist" aria-label="Product categories">
+                    <button type="button" role="tab" id="tab-all" data-category="all" aria-selected="true">All</button>
+                    <button type="button" role="tab" id="tab-tshirts" data-category="tshirts" aria-selected="false" tabindex="-1">T-Shirts</button>
+                    <button type="button" role="tab" id="tab-stickers" data-category="stickers" aria-selected="false" tabindex="-1">Car Stickers</button>
+                </div>
 
+                <div class="result-meta">
+                    <p id="result-count" role="status" aria-live="polite">Loading products&hellip;</p>
+                    <button type="button" id="clear-filters" class="text-button" hidden>Clear search and filters</button>
+                </div>
+            </form>
 
-        
-            <h2>T-Shirts</h2>
+            <div id="product-results" class="product-grid" role="tabpanel" aria-labelledby="tab-all"></div>
 
-            <h3>Circle Logo Tee</h3>
-            <p>Oversized fit, heavyweight cotton, full-colour circular back print. Available in six colourways.</p>
-            <div class="product-grid">
-                <article class="product-card">
-                    <img src="images/products/circle-tee-pink.png" alt="Vuilgat Circle Logo Tee in pink">
-                    <p class="product-name">Circle Logo Tee &ndash; Pink</p>
-                    <p class="product-price">R450</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/circle-tee-maroon.png" alt="Vuilgat Circle Logo Tee in maroon">
-                    <p class="product-name">Circle Logo Tee &ndash; Maroon</p>
-                    <p class="product-price">R450</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/circle-tee-white.png" alt="Vuilgat Circle Logo Tee in white">
-                    <p class="product-name">Circle Logo Tee &ndash; White</p>
-                    <p class="product-price">R450</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/circle-tee-navy.png" alt="Vuilgat Circle Logo Tee in navy blue">
-                    <p class="product-name">Circle Logo Tee &ndash; Navy</p>
-                    <p class="product-price">R450</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/circle-tee-green.png" alt="Vuilgat Circle Logo Tee in green">
-                    <p class="product-name">Circle Logo Tee &ndash; Green</p>
-                    <p class="product-price">R450</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/circle-tee-black.png" alt="Vuilgat Circle Logo Tee in black">
-                    <p class="product-name">Circle Logo Tee &ndash; Black</p>
-                    <p class="product-price">R450</p>
-                </article>
+            <div id="no-results" hidden>
+                <p><strong>No products match your search.</strong></p>
+                <p>Check the spelling or try a colour such as &ldquo;black&rdquo;. Looking for something custom? <a href="enquiry.html">Send us an enquiry</a>.</p>
             </div>
 
-            <h3>Tokyo Van Tee</h3>
-            <p>Illustrated stance van graphic inspired by Tokyo night drives. Available in four colourways.</p>
-            <div class="product-grid">
-                <article class="product-card">
-                    <img src="images/products/tokyo-van-tee-white.png" alt="Vuilgat Tokyo Van Tee in white">
-                    <p class="product-name">Tokyo Van Tee &ndash; White</p>
-                    <p class="product-price">R480</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/tokyo-van-tee-red.png" alt="Vuilgat Tokyo Van Tee in red">
-                    <p class="product-name">Tokyo Van Tee &ndash; Red</p>
-                    <p class="product-price">R480</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/tokyo-van-tee-black.png" alt="Vuilgat Tokyo Van Tee in black">
-                    <p class="product-name">Tokyo Van Tee &ndash; Black</p>
-                    <p class="product-price">R480</p>
-                </article>
-                <article class="product-card">
-                    <img src="images/products/tokyo-van-tee-green.png" alt="Vuilgat Tokyo Van Tee in green">
-                    <p class="product-name">Tokyo Van Tee &ndash; Green</p>
-                    <p class="product-price">R480</p>
-                </article>
-            </div>
-      
+            <noscript>
+                <p>The product list needs JavaScript. Please turn it on, or <a href="enquiry.html">send an enquiry</a> and we will share our full price list.</p>
+            </noscript>
+        </section>
 
-        
-       
-            <h2>Car Stickers</h2>
-            <p>Custom cut vinyl decals, built to handle daily driving and South African weather.</p>
-            <div class="product-grid">
-                <article class="product-card">
-                    <h3 class="product-name">Vuilgat! Windscreen Banner</h3>
-                    <p>Classic wide banner decal, sized for most windscreens.</p>
-                    <img src="WindScreen .jpg" >
-                    <p class="product-price">R150</p>
-                </article>
-                
-                <article class="product-card">
-                    <h3 class="product-name">Vuilgat! Sticker Pack</h3>
-                    <p>Set of 5 mixed decals for laptops and phonecase.</p>
-                    <img src="pad.png">
-                    <p class="product-price">R120</p>
-                </article>
+        <!-- Part 3: accordion -->
+        <section id="shop-faq">
+            <h2>Sizing, Care &amp; Delivery</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-heading"><button type="button" class="accordion-trigger" id="shop-q1" aria-expanded="true" aria-controls="shop-a1">How do the t-shirts fit?</button></h3>
+                    <div class="accordion-panel" id="shop-a1" role="region" aria-labelledby="shop-q1">
+                        <p>Our tees have an oversized cut. If you want a regular fit, go one size down. Sizes run S to XXL.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-heading"><button type="button" class="accordion-trigger" id="shop-q2" aria-expanded="false" aria-controls="shop-a2">How do I apply and care for a car sticker?</button></h3>
+                    <div class="accordion-panel" id="shop-a2" role="region" aria-labelledby="shop-q2" hidden>
+                        <p>Clean the glass or paint with alcohol, peel, press down from the centre outwards and wait 24 hours before washing. The vinyl is built for daily driving and South African weather.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-heading"><button type="button" class="accordion-trigger" id="shop-q3" aria-expanded="false" aria-controls="shop-a3">How long do orders take?</button></h3>
+                    <div class="accordion-panel" id="shop-a3" role="region" aria-labelledby="shop-q3" hidden>
+                        <p>Items in stock go out within 2 working days. Made-to-order stickers take about 3&ndash;5 working days. Use the <a href="enquiry.html">enquiry form</a> for an exact estimate.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-heading"><button type="button" class="accordion-trigger" id="shop-q4" aria-expanded="false" aria-controls="shop-a4">Can I collect my order?</button></h3>
+                    <div class="accordion-panel" id="shop-a4" role="region" aria-labelledby="shop-q4" hidden>
+                        <p>Yes, collection is free from our Johannesburg and Protea Glen studios. Courier delivery is available nationwide.</p>
+                    </div>
+                </div>
             </div>
-      
-     
+        </section>
+
+        <section id="enquiry-cta">
             <p>Custom order, bulk pricing, or a question about sizing?</p>
             <a href="enquiry.html" class="cta-button">Send an Enquiry</a>
-    
+        </section>
 
     </main>
 
     <footer>
-        
+        <p>&copy; 2026 Vuilgat. All rights reserved.</p>
         <nav aria-label="Footer navigation">
             <ul>
-                  <a href="index.html">Home|</a>
-                  <a href="about.html">About Us|</a>
-                  <a href="enquiry.html">Enquiry|</a>
-                  <a href="contact.html">Contact|</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <p>&copy; 2026 Vuilgat. All rights reserved.</p>
         </nav>
+        <p class="social-footer">Follow us:
+            <a href="https://www.instagram.com/vuilgat_?igsh=MWwwZjNmNjZ4NjI3cw==" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://www.tiktok.com/@vuilgat_?_r=1&amp;_t=ZS-98pDlBoQbsy" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </p>
     </footer>
-
+<script> 
+        // date and time update on the footer
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                 minute: '2-digit', 
+                 second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('en-US', options);
+        }
+        // update date time immediately
+        updateDateTime();
+        setInterval(updateDateTime, 1000);  
+    </script>
 </body>
 </html>

@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>Enquiry | Vuilgat!</title>
-    <link rel="stylesheet" href="css/style.css">
 
-    <main>
-<img src="logo.png" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- ===== SEO ===== -->
+    <title>Product &amp; Order Enquiry | Vuilgat!</title>
+    <meta name="description" content="Ask about pricing, stock availability, custom sticker orders, or becoming a stockist. We'll get back to you with the details you need.">
+    <meta name="keywords" content="enquiry form, product pricing, stock availability, custom sticker order, bulk order, stockist application, Vuilgat contact">
+    <meta name="author" content="Anele Mawela">
+   
+    
+    <!-- Open Graph / social sharing preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Product &amp; Order Enquiry | Vuilgat!">
+    <meta property="og:description" content="Ask about pricing, stock availability, custom sticker orders, or becoming a stockist. We'll get back to you with the details you need.">
+    <meta property="og:image" content="https://www.vuilgat.com/images/vuilgat-logo.png">
+    <meta property="og:url" content="https://www.vuilgat.com/enquiry.html">
+
+    <link rel="icon" type="image/png" href="images/vuilgat-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+   
+    <header class="site-header">
+        <a href="index.html" class="logo">Vuilgat<span>!</span></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="enquiry.html" aria-current="page">Enquiry</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <main id="main">
         <section id="page-heading">
-            <h1>Product &amp; Order Enquiry</h1>
+            <h1><img src="images/vuilgat-logo.png" alt="" width="60" height="60"> Product &amp; Order Enquiry</h1>
             <p>Ask about pricing, stock availability, custom sticker orders, or becoming a stockist. We'll get back
                 to you with the details you need.</p>
         </section>
@@ -31,6 +65,18 @@
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" pattern="[0-9]{10}">
                 </div>
+
+               
+
+               
+</body>
+   
+
+        <!-- Enquiry form: JavaScript validation and dynamic response handling to be added in Part 3 -->
+        <section id="enquiry-form-section">
+            <form id="enquiry-form" action="#" method="post">
+
+                
 
                 <div class="form-group">
                     <label for="enquiry-type">Enquiry Type</label>
@@ -60,7 +106,7 @@
                          <option value="Circle Logo Tee – Black">Circle Logo Tee – Black</option>
 
                         
-                        
+                         <option value="stickers ">window screen/phone/laptop/ size </option>
                         
                         
                         
@@ -68,7 +114,7 @@
                     
                       
 
-                        <option value="stickers ">window screen/phone/laptop/ size </option>
+                       
                         
                     </select>
                 </div>
@@ -101,6 +147,24 @@
             <p>&copy; 2026 Vuilgat. All rights reserved.</p>
         </nav>
     </footer>
-
+<script> 
+        // date and time update on the footer
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                 minute: '2-digit', 
+                 second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('en-US', options);
+        }
+        // update date time immediately
+        updateDateTime();
+        setInterval(updateDateTime, 1000);  
+    </script>
 </body>
 </html>

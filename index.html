@@ -4,25 +4,57 @@
    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!--SEO--> 
+
     <title>Vuilgat! | Stance Car Culture Apparel &amp; Stickers</title>
     <meta name="description" content="Vuilgat is a South African stance car culture brand selling statement t-shirts and custom car stickers for enthusiasts.">
+    <meta name="keywords" content="Vuilgat, stance car culture, South African car culture, car enthusiast apparel, custom car stickers, statement t-shirts, Johannesburg car scene, Soweto car scene">
+    <meta name="author" content="Anele Mawela">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+
+
+    <!--open graph meta tags for social media sharing-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vuilgat!">
+    <meta property="og:title" content="Vuilgat! | Stance Car Apparel &amp; Car Stickers in Gauteng">
+    <meta property="og:description" content="Vuilgat! makes statement t-shirts and custom car stickers for South Africa&#39;s stance car community. Shop tees, windscreen banners and sticker packs from Soweto.">
+    <meta property="og:image" content="images/vuilgat-logo.png">
+    
+    <link rel="icon" type="image/png" href="images/vuilgat-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+     <script src="js/script.js" defer></script>
 </head>
 <body>
 
     
-                       
-                        <h1> Welcome to Vuilgat</h1>
 
-    <!-- ===================== MAIN CONTENT ===================== -->
-    <main>
+    <header class="site-header">
+        <a href="index.html" class="logo">Vuilgat<span>!</span></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Hero section: brand statement and call to action -->
+    <!-- Main content area, with skip link target for accessibility -->
+    <main id="main">
+
         <section id="hero">
-            
+            <img src="images/vuilgat-logo.png" alt="Vuilgat! handwritten logo" class="hero-logo" width="300" height="300">
             <div class="hero-text">
                 <h1>Built From The Stance Scene. Worn On The Street.</h1>
                 <p>Statement t-shirts and custom car stickers for the local stance car community. Not a fashion label &mdash; a car culture identity.</p>
@@ -30,22 +62,20 @@
             </div>
         </section>
 
-        <video autoplay loop muted playsinline width="600">
-    <source src="vuilgat.mp4" type="video/mp4">
-   
-</video>
-        <!-- Quick links into the two core product categories -->
-        <section id="categories">
+                       
+                        
+          
+<section id="categories">
             <h2>Shop By Category</h2>
             <div class="category-grid">
-                <article class="category-card">
-                    <img src="images/products/tokyo-van-tee-red.png" alt="Vuilgat red t-shirt with Tokyo van graphic">
+                <article class="category-card reveal">
+                    <img src="images/products/tokyo-van-tee-red.png" alt="Vuilgat red t-shirt with Tokyo van graphic" loading="lazy" width="400" height="400">
                     <h3>T-Shirts</h3>
                     <p>Oversized statement tees, printed in small batches.</p>
                     <a href="shop.html#tshirts">View T-Shirts</a>
                 </article>
-                <article class="category-card">
-                    <!-- Sticker product photography still to be sourced; text-led card for now -->
+                <article class="category-card reveal">
+                    <img src="images/products/vuilgat-sticker-pack-flatlay.jpg" alt="Vuilgat! car stickers on a laptop, tablet and phone" loading="lazy" width="400" height="400">
                     <h3>Car Stickers</h3>
                     <p>Custom decals seen on stance cars at events across the country.</p>
                     <a href="shop.html#stickers">View Stickers</a>
@@ -62,13 +92,44 @@
             <a href="about.html">Read More About Us</a>
         </section>
 
-        <!-- Placeholder for live social feed, to be wired up with JS/APIs in Part 3 -->
+        <!-- Part 3: image gallery with lightbox (js/gallery.js) -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Tap or click any picture to view it larger, then use the arrow keys or swipe to move through the drop.</p>
+            <ul class="gallery">
+                <li class="reveal"><a class="gallery-link" href="images/products/vuilgat-sticker-pack-flatlay.jpg" data-caption="Vuilgat! sticker pack on a laptop, tablet, phone and sticker sheet"><img src="images/products/vuilgat-sticker-pack-flatlay.jpg" alt="Vuilgat! sticker sheet beside a laptop, tablet and phone" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/vuilgat-windscreen-banner-decal.jpg" data-caption="The white Vuilgat! windscreen banner on a car"><img src="images/products/vuilgat-windscreen-banner-decal.jpg" alt="White Vuilgat! windscreen banner decal on a car windscreen" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/circle-tee-black.png" data-caption="Circle Logo Tee in black"><img src="images/products/circle-tee-black.png" alt="Vuilgat Circle Logo Tee in black" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/tokyo-van-tee-red.png" data-caption="Tokyo Van Tee in red"><img src="images/products/tokyo-van-tee-red.png" alt="Vuilgat Tokyo Van Tee in red" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/circle-tee-pink.png" data-caption="Circle Logo Tee in pink"><img src="images/products/circle-tee-pink.png" alt="Vuilgat Circle Logo Tee in pink" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/tokyo-van-tee-black.png" data-caption="Tokyo Van Tee in black"><img src="images/products/tokyo-van-tee-black.png" alt="Vuilgat Tokyo Van Tee in black" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/circle-tee-navy.png" data-caption="Circle Logo Tee in navy"><img src="images/products/circle-tee-navy.png" alt="Vuilgat Circle Logo Tee in navy blue" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/tokyo-van-tee-white.png" data-caption="Tokyo Van Tee in white"><img src="images/products/tokyo-van-tee-white.png" alt="Vuilgat Tokyo Van Tee in white" loading="lazy" width="400" height="400"></a></li>
+                <li class="reveal"><a class="gallery-link" href="images/products/circle-tee-green.png" data-caption="Circle Logo Tee in green"><img src="images/products/circle-tee-green.png" alt="Vuilgat Circle Logo Tee in green" loading="lazy" width="400" height="400"></a></li>
+            </ul>
+        </section>
+
+        <!-- Part 3: local video content, loads only when the visitor presses play -->
+        <section id="from-the-scene">
+            <h2>From The Scene</h2>
+            <p>A look at the cars and crowd at a recent stance meet, where Vuilgat! shows up and prints what the scene wants to wear.</p>
+            <figure class="video-wrap reveal">
+                <video controls preload="none" playsinline poster="images/video/vuilgat-stance-car-meet-reel-poster.jpg" width="432" height="768">
+                    <source src="images/video/vuilgat-stance-car-meet-reel.mp4" type="video/mp4">
+                    Your browser does not support the video tag. You can watch more on our Instagram page.
+                </video>
+                <figcaption>Stance cars parked up at a Gauteng car meet (60 seconds).</figcaption>
+            </figure>
+        </section>
+
+        <!-- Social links (external services) and local SEO -->
         <section id="social-feed">
             <h2>Follow The Culture</h2>
-            <p>Check out the latest builds, drops and event appearances on our socials.</p>
+            <p>Check out the latest builds, drops and event appearances on our socials. You can also visit our studios in
+                <a href="contact.html#find-us">Johannesburg and Protea Glen, Soweto</a>.</p>
             <ul class="social-links">
-                <li><a href="https://www.instagram.com/vuilgat_?igsh=MWwwZjNmNjZ4NjI3cw==">Instagram</a></li>
-                <li><a href=https://www.tiktok.com/@vuilgat_?_r=1&_t=ZS-98pDlBoQbsy>TikTok</a></li>
+                <li><a href="https://www.instagram.com/vuilgat_?igsh=MWwwZjNmNjZ4NjI3cw==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@vuilgat_?_r=1&amp;_t=ZS-98pDlBoQbsy" target="_blank" rel="noopener noreferrer">TikTok</a></li>
             </ul>
         </section>
 
@@ -78,13 +139,37 @@
         <p>&copy; 2026 Vuilgat. All rights reserved.</p>
         <nav aria-label="Footer navigation">
             <ul>
-                <a href="about.html">About Us|</a>
-                <a href="shop.html">Shop|</a>
-                <a href="enquiry.html">Enquiry|</a>
-                <a href="contact.html">Contact|</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <p class="social-footer">Follow us:
+            <a href="https://www.instagram.com/vuilgat_?igsh=MWwwZjNmNjZ4NjI3cw==" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://www.tiktok.com/@vuilgat_?_r=1&amp;_t=ZS-98pDlBoQbsy" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </p>
     </footer>
 
+<script> 
+        // date and time update on the footer
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                 minute: '2-digit', 
+                 second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('en-US', options);
+        }
+        // update date time immediately
+        updateDateTime();
+        setInterval(updateDateTime, 1000);  
+    </script>
 </body>
 </html>
